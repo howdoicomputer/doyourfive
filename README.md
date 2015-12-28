@@ -7,6 +7,56 @@ Do Your Five is a small Java based API that tracks someone doing a stripped 5x5 
 * Install `maven`
 * `mvn clean compile assembly:single`
 * `java -jar target\doyourfive-1.0-SNAPSHOT-jar-with-dependencies.jar`
+* Navigate to [127.0.0.1:4567/workouts](127.0.0.1:4567/workouts)
+
+You should see a list of potential workouts in the form of JSON.
+
+```JSON
+[
+{
+id: 1,
+sets: 5,
+reps: 5,
+title: "Barbell Deadlift",
+plan: "A"
+},
+{
+id: 2,
+sets: 5,
+reps: 5,
+title: "Barbell Bent Over-Row",
+plan: "A"
+},
+{
+id: 3,
+sets: 5,
+reps: 5,
+title: "Dumbell Shoulder Press",
+plan: "A"
+},
+{
+id: 4,
+sets: 5,
+reps: 5,
+title: "Barbell Squat",
+plan: "B"
+},
+{
+id: 5,
+sets: 5,
+reps: 5,
+title: "Dumbell Bench Press",
+plan: "B"
+},
+{
+id: 6,
+sets: -1,
+reps: 2,
+title: "Max Rep Pull Up",
+plan: "B"
+}
+]
+```
 
 ## Junit
 * `mvn test`

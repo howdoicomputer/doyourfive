@@ -47,8 +47,7 @@ public class DoYourFive {
 
     private int id;
     private char plan;
-    private HashMap<int,Workout> trackSets;
-
+    
   }
 
   public static void main(String[] args) {
@@ -120,8 +119,8 @@ public class DoYourFive {
     */
     post("/workout/:session/:plan/increment", (request, response) -> {
       Gson gson = new Gson();
-
-    }
+      return 1;
+    });
   }
 
 }
